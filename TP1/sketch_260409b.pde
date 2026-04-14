@@ -1,13 +1,20 @@
  PImage img;
 void setup(){
   size(800,400);
-  img=loadImage("data/edificio_01.png");
+ img=loadImage("data/edificio_01.png");
   background(150,190,200); //fondo
-  fill(100);
+  fill(100); //color del piso
+  noStroke(); //sacar borde del piso
   rect(0,350,800,50); //piso
-  fill(70);
-  rect(600,40,90,500); //edificio
-  fill(120,80,40);
+fill(160);  //color edificio de atras
+rect(700,150,40,200); //edificio de atras a la izquierda
+ fill(160);
+ rect(420,200,30,150); //edificio de tras a la derecha
+  rect(500,130,30,220); //edificio de atras
+ fill(70); //color edificio
+stroke(1); //borde del edificio
+  rect(600,40,90,500); //edificio principal
+  fill(120,80,40); //color
   rect(600,40,90,8); //parte de arriba del edificio
   fill(180);
   rect(600,32,90,8); //parte de arriba del edificio
@@ -28,13 +35,13 @@ void setup(){
   line(600,340,690,340);
   line(600,360,690,360);
   line(600,380,690,380);
-  stroke(255); //grosor de la linea
+  stroke(255, 220, 100, 200);
+ stroke(255); //color lineas
+  strokeWeight(1); //grosor de las lineas
   line(610,40,610,400); //lineas horizontales 
   line(630,40,630,400);
   line(650,40,650,400);
   line(670,40,670,400);
-  line(690,40,690,400);
-  
 }
   void draw(){
   image(img,0,0,400,400);
