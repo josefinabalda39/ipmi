@@ -1,4 +1,8 @@
- PImage img;
+//Josefina Balda 
+//Comision 2
+//tp1
+//abril del 2026
+  PImage img;
 void setup(){
   size(800,400);
  img=loadImage("data/edificio_01.png");
