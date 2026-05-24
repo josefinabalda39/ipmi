@@ -1,3 +1,8 @@
+//tp2 programacion
+//comision 2 
+//Josefina Balda
+//legajo 125517/7
+
 PImage imgfondoauto; //cargar imagen
 PImage imggtainicio;
 PImage imgchicafondo;
